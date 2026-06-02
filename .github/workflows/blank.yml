@@ -1,0 +1,8 @@
+name: Mon premier robot
+on: [push]
+jobs:
+  dire-bonjour:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "👋 Le robot dit bonjour à ${{ github.actor }}"
+      - run: echo "📦 Commit: ${{ github.sha }}"
